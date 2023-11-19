@@ -41,9 +41,18 @@ footer {
 
 .website {
     margin: auto;
-    width: 41%;
+    width: 700px;
     height: 300vh; /* idk if we actually want this */
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 720px) {
+    .website {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 }
 
 .styled_text {
