@@ -12,14 +12,6 @@ header {
     position: relative;
 }
 
-footer {
-    font-size: 12;
-    color: rgb(99, 99, 99);
-    width: 700px;
-    margin: auto;
-    text-align: center;
-}
-
 .header-image {
     width: 100%;
     height: auto;
@@ -30,20 +22,74 @@ footer {
     max-height: 600px; 
 }
 
+header::after {
+    content: ""; /* Add an empty content */
+    position: absolute; /* Set the position to absolute */
+    bottom: 0; /* Align it to the bottom of the header */
+    left: 0; /* Align it to the left of the header */
+    width: 100%; /* Make it span the entire width of the header */
+    border-bottom: 1px solid black; /* Add a 1px solid black border at the bottom */
+}
+
+footer {
+    font-size: 12;
+    color: rgb(99, 99, 99);
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
 .website {
     margin: auto;
-    width: 700px;
-    height: 250vh; /* idk if we actually want this */
+    width: 41%;
+    height: 300vh; /* idk if we actually want this */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div.website p {
-    line-height: 1.4;
+.styled_text {
+    line-height: 1.6;
+    text-align: justify;
 }
 
 
 div {
   margin: auto;
+}
+
+ul {
+    list-style-type: square;
+    text-align: left;
+    column-count: 3; /* Set the number of columns */
+    column-gap: 30px; /* Adjust the gap between columns */
+    padding: 0px; 
+}
+
+li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.list-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the columns horizontally */
+    align-items: flex-start; /* Align the columns to the top of the container */
+}
+
+/* Classes and information for figures */
+
+div.drivelink {
+  margin: auto;
+  text-align: center;
+}
+
+div.drivelink img {
+    width: 20%;
+    height: auto;
+}
+
+div.drivelink figcaption {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: -10px;
 }
 
 

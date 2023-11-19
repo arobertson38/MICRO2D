@@ -22,10 +22,10 @@
 
 <div class="website">
 
-    <h1>MICRO2D</h1>
+    <h1 style="text-align: center;">MICRO2D</h1>
 
     <div>
-        <p>
+        <p class="styled_text">
             Data science, machine learning, and deep learning techniques have 
             been used to make tremendous advances in a wide variety of challenging 
             problems over the last decade. However, these advances are overwhelmingly 
@@ -40,11 +40,11 @@
             data is tremendous. 
         </p>
 
-        <p>
+        <p class="styled_text">
             We present <b>MICRO2D</b> to support the continued growth of 
             big data efforts in Materials Informatics. <b>MICRO2D</b>
             is a statistically diverse, big heterogeneous microstructure dataset 
-            composed of 2-phase microstructures. The dataset contains 
+            composed of 87,379 2-phase microstructures. The dataset contains 
             microstructures displaying a wide diversity of 2-point statistics 
             and local neighborhood distributions. The dataset also contains 
             mechanical (elastic) and thermal properties computed over a range 
@@ -52,10 +52,15 @@
             homogenized properties are included in total. Additionally, elastic 
             strain fields are provided for a few select boundary conditions 
             and constituent properties. Additional localized fields are available 
-            upon request, but are not included due to memory constraints. 
+            upon request, but are not included due to memory constraints. The 
+            dataset is hosted permanently on the following google drive.
         </p>
 
-        <p>
+        <div class="drivelink">
+            <a href="https://www.google.com"><img src="assets/images/DriveLogo.png" alt="M2D Drive Logo"> </a>
+        </div>
+
+        <p class="styled_text">
             If you find this dataset useful, please consider reading and 
             citing our accompanying papers. 
         </p>
@@ -80,10 +85,81 @@
                 Fields</b>. <i>Acta Materialia</i>, 232, 117927 (2022).
             </p>
         </div>
+    </div>
 
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p> This is a new hting I am adding to learn how this works. </p>
+    <!-- Description of the dataset -->
+    <div>
+        <h3> Dataset Contents and Structure </h3>
+
+        <p class="styled_text">
+        The MICRO2D dataset is composed of 87,379 2-phase microstructures. We refer
+        the interested reader to the first paper listed above -- "MICRO2D: A Large,
+        Statistically Diverse, Heterogeneous Microstructure Dataset" -- for a
+        thorough analysis of the dataset's content. The contained microstructures 
+        display both local and global diversity. Locally, the microstructures 
+        are separated into 10 important classes. Each class is defined by a 
+        unique set of local features. Globally, the microstructures' individual 
+        features are arranged in a wide diversity of spatial patterns. Mathematically,
+        this corresponds to diversity in their 2-point statistics. The website's 
+        banner image contains examples microstructures with different local and 
+        global characteristics.
+
+        Additionally, each microstructure in the dataset comes with several computed
+        properties. Primarily, the microstructures come with several computed 
+        mechanical (elastic - Ex, Ey, vxy, vyx, Gxy) and thermal homogenized values 
+        (kx, ky). The values are reported for 6 different combinations of 
+        constituent properties for the two phases. These leaves a total of 42 
+        homogenized properties per microstructure. Additionally, the dataset comes 
+        with spatial elastic strain fields for the (1 GPa:1000 GPa) high contrast 
+        case. Strain fields are included for two boundary conditions: unaxial tension
+        (X) and pure shear. Strain fields for the remaining constituent combinations
+        are available from the authors. 
+        </p>
+
+        <h4> Storage Format </h4>
+
+        <p class="styled_text">
+        The dataset is stored in a HDF file format. We recommend accessing the 
+        files using the python package  
+        <a href="https://www.h5py.org/">H5py</a>. Once opened, the 
+        dataset's microstructures are separated into 10 groups corresponding to
+        their classes. The available classes are:
+        </p>
+
+        <!-- INSERT classes -->
+        <div class="list-container">
+        <ul>
+            <li> GRF </li>
+            <li> NBSA </li>
+            <li> AngEllipse </li>
+            <li> RandomEllipse </li>
+            <li> VoidSmall </li>
+            <li> VoidSmallBig </li>
+            <li> VoronoiLarge </li>
+            <li> VoronoiMedium </li>
+            <li> VoronoiMediumSpaced </li>
+            <li> VoronoiSmall </li>
+        </ul>
+        </div>
+
+        <p class="styled_text">
+            The microstructures, properties, and important metadata for each class
+            are contained
+            within each group. The following schematic exemplifies the
+            structure of the group for the 'GRF' class and the homogenized properties.
+        </p>
+
+        <br>
+
+        <div class="drivelink">
+            <figure>
+                <img src="assets/images/HDFStructure.png" alt="M2D Drive Logo" style="width: 90%;">
+                <figcaption> Schematic describing the structure of MICRO2D's HDF files. </figcaption>
+            </figure>
+        </div>
+
+        <br>
+
     </div>
 
     <!-- Creating the collaborators section.-->
