@@ -147,17 +147,6 @@ div.drivelink figcaption {
 
 /* Handling collaborators section. */
 
-h4.collaborators {
-    align-items: center;
-}
-
-h4.collaborators img {
-    height: 21px;
-    width: 21px;
-    vertical-align: -5px;
-    margin-left: 3px;
-}
-
 div.collaborators {
     width: 100%;
     overflow: auto;
@@ -174,6 +163,27 @@ div.collaborators div {
 
 div.collaborators img {
     max-width: 95%; /* Make sure images don't exceed their container */
-    height: auto; /* Maintain aspect ratio */
+    height: 250px;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 720px) {
+    div.collaborators img {
+        max-width: 95%; /* Make sure images don't exceed their container */
+        height: 34vw;
+        object-fit: cover;
+    }
+}
+
+
+h4.collaborators {
+    align-items: center;
+}
+
+h4.collaborators img {
+    height: 21px;
+    width: 21px;
+    vertical-align: -5px;
+    margin-left: 3px;
+}
+
