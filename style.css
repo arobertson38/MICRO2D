@@ -39,13 +39,34 @@ footer {
     text-align: center;
 }
 
+@media only screen and (max-width: 720px) {
+    footer {
+        font-size: 12;
+        color: rgb(99, 99, 99);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 85px;
+        box-sizing: border-box;
+    }
+}
+
 .website {
     margin: auto;
     width: 700px;
-    height: 300vh; /* idk if we actually want this */
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.styled_text {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+div {
+  margin: auto;
+}
+
+/* adapting for the media */
 @media only screen and (max-width: 720px) {
     .website {
         width: 100%;
@@ -55,15 +76,6 @@ footer {
     }
 }
 
-.styled_text {
-    line-height: 1.6;
-    text-align: justify;
-}
-
-
-div {
-  margin: auto;
-}
 
 ul {
     list-style-type: square;
@@ -71,6 +83,16 @@ ul {
     column-count: 3; /* Set the number of columns */
     column-gap: 30px; /* Adjust the gap between columns */
     padding: 0px; 
+}
+
+@media only screen and (max-width: 620px) {
+    ul {
+        list-style-type: square;
+        text-align: left;
+        column-count: 2; /* Set the number of columns */
+        column-gap: 30px; /* Adjust the gap between columns */
+        padding: 0px; 
+    }
 }
 
 li {
@@ -153,4 +175,5 @@ div.collaborators div {
 div.collaborators img {
     max-width: 95%; /* Make sure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
 }
