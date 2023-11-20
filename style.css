@@ -90,6 +90,16 @@ ul {
         list-style-type: square;
         text-align: left;
         column-count: 2; /* Set the number of columns */
+        column-gap: 30px; /* Adjust the gap between columns */
+        padding: 0px; 
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    ul {
+        list-style-type: square;
+        text-align: left;
+        column-count: 2; /* Set the number of columns */
         column-gap: 0px; /* Adjust the gap between columns */
         padding: 0px; 
     }
