@@ -100,7 +100,7 @@ ul {
         list-style-type: square;
         text-align: left;
         column-count: 2; /* Set the number of columns */
-        column-gap: 0px; /* Adjust the gap between columns */
+        column-gap: -10px; /* Adjust the gap between columns */
         padding: 0px; 
     }
 }
