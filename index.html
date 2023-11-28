@@ -54,16 +54,26 @@
         <p class="styled_text">
             We present <b>MICRO2D</b> to support the continued growth of 
             big data efforts in Materials Informatics. <b>MICRO2D</b>
-            is a statistically diverse, big heterogeneous microstructure dataset 
-            composed of 87,379 2-phase microstructures. The dataset contains 
-            microstructures displaying a wide diversity of 2-point statistics 
-            and local neighborhood distributions. The dataset also contains 
-            mechanical (elastic) and thermal properties computed over a range 
-            of constituent property pairs for the two phases. 42 computed 
-            homogenized properties are included in total. Additionally, elastic 
-            strain fields are provided for a few select boundary conditions 
-            and constituent properties. Additional localized fields are available 
-            upon request, but are not included due to memory constraints. The 
+            is a statistically diverse, big heterogeneous microstructure dataset
+            containing
+        </p>
+
+        <ul>
+            <li> 87,379 2-phase, 256x256 2D microstructures </li>
+            <li> 10 unique microstructure classes </li>
+            <li> 42 computed elastic and thermal homogenized properties per microstructure. </li>
+            <li> Computed Elastic Strain fields for 3 important boundary conditions. </li>
+        </ul>
+            
+        <p class="styled_text">
+            Additional localized fields are available 
+            upon request, but are not included due to memory constraints. 
+            Most importantly, the dataset contains microstructures displaying an 
+            extremely large diversity of 2-point statistics and local neighborhood 
+            distributions. As a result, <b>MICRO2D</b> provides a valuable 
+            environment for studying the 
+            connection between microstructure features and important properties 
+            and behaviors. The 
             dataset is hosted permanently on the following google drive
             (the link will be fixed when the paper is published).
         </p>
@@ -78,7 +88,7 @@
         <h3> Citing MICRO2D </h3>
 
         <p class="styled_text">
-            MICRO2D is provided for use under an MIT License. If you use this 
+            MICRO2D is provided for use under a CC-BY 4.0 License. If you use this 
             dataset in your research, please cite us using the following reference:
         </p>
 
@@ -89,7 +99,7 @@
                 <b>MICRO2D: A Large, Statistically 
                 Diverse, Heterogeneous Microstructure Dataset</b>
                 .
-                <i>In Review 
+                <i>In Review: 
                 Integrating Materials and Manufacturing Innovation</i>, 
                 (Submitted Nov. 2023).
             </p>
@@ -101,6 +111,13 @@
         </p>
 
         <div class="citation-box">
+            <p class="citation-text"> 
+                Buzzy, M.O., Robertson, A.E., Kalidindi, S.R. 
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4639414">
+                <b>Statistically Conditioned Polycrystal Generation Using Denoising Diffusion Models</b>
+                </a>
+                . <i>In Review: Acta Materialia</i>, (Submitted Nov. 2023).
+            </p>
             <p class="citation-text"> 
                 Robertson, A.E., Kelly, C., Buzzy, M.O., Kalidindi, S.R. 
                 <a href="https://www.sciencedirect.com/science/article/abs/pii/S1359645423002975">
@@ -165,7 +182,7 @@
 
         <!-- INSERT classes -->
         <div class="list-container">
-        <ul>
+        <ul class="classes">
             <li> GRF </li>
             <li> NBSA </li>
             <li> AngEllipse </li>
@@ -198,6 +215,24 @@
         <br>
 
     </div>
+    <!-- Licensing -->
+
+    <div>
+        <br>
+        <hr>
+        <h3> Licensing </h3>
+
+        <p class="styled_text">
+            The MICRO2D dataset is released under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> 
+            license. By downloading and utilizing the provided datasets, the user agrees to 
+            the contents of this license. The user is free to copy, redistribute, and 
+            transmit the dataset without obtaining specific permission from the original 
+            authors provided that proper attribution is given to the MICRO2D dataset source. 
+            For guidance on proper attribution, please see the section on citation above. 
+
+        </p>
+    </div>
+
 
     <!-- Creating the collaborators section.-->
     <div>

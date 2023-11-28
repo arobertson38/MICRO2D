@@ -77,7 +77,7 @@ div {
 }
 
 
-ul {
+ul.classes {
     list-style-type: square;
     text-align: left;
     column-count: 3; /* Set the number of columns */
@@ -86,7 +86,7 @@ ul {
 }
 
 @media only screen and (max-width: 620px) {
-    ul {
+    ul.classes {
         list-style-type: square;
         text-align: left;
         column-count: 2; /* Set the number of columns */
@@ -96,7 +96,7 @@ ul {
 }
 
 @media only screen and (max-width: 420px) {
-    ul {
+    ul.classes {
         list-style-type: square;
         text-align: left;
         column-count: 2; /* Set the number of columns */
